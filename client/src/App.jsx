@@ -3,6 +3,7 @@ import Dashboard from './pages/Dashboard/Dashboard.jsx'
 import Layout from './components/layout/Layout/Layout.jsx'
 import PublicLayout from "./components/layout/publicLayout/index.jsx";
 import LoginPage from "./pages/Login/index.jsx";
+import RegisterPage from "./pages/Register/index.jsx";
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route element={<PublicLayout />}>
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
         </Route>
         <Route element={<Layout />}>
           <Route path="/" element={<h1>Home Page</h1>} />
